@@ -14,4 +14,4 @@ class QuestionCreateView(CreateView):
     success_url = reverse_lazy('success')
 
 class Success(TemplateView):
-  template_name = "success.html"
+    template_name = "success.html"
