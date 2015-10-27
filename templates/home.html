@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
+{% load staticfiles %}
 <div class="jumbotron">
     <h1>Welcome to my personal website!</h1>
     <p>I will soon be posting information about myslef and some of the work I've completed in college.</p>
     <p><a href="{% url 'question_create' %}" class="btn btn-lg btn-primary">Submit question</a></p>
+    <img src="{% static "hey.jpg" %}" width="200px" height="200px" alt="Me"/>
 </div>
 {% endblock %}
